@@ -17,7 +17,7 @@
                 await (a = m.createElement("script"));
                 e.set("key", "AIzaSyBjAtdai85CAurjLj_rmVtYc20JtCIuq-c");
                 e.set("v", "beta");
-                a.src = https://maps.googleapis.com/maps/api/js? + e;
+                a.src = "https://maps.googleapis.com/maps/api/js?" + e;
                 a.onerror = () => n(Error(p + " could not load."));
                 m.head.append(a);
                 a.onload = () => f();
@@ -26,6 +26,7 @@
             d[l] = (f, ...n) => u().then(() => d[l](f, ...n));
     })();
 </script>
+
 
 <script>
 async function initMap() {
