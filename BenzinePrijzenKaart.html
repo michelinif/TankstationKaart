@@ -71,8 +71,10 @@ async function initMap() {
                 "<b>Diesel:</b> " + s.diesel
         });
 
-        marker.addListener("click", function() {
-            info.open(map, marker);
+        marker.addEventListener("gmp-click", () => {
+			info.open(map, marker);
+		});
+
         });
     });
 }
