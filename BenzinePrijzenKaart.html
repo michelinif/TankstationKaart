@@ -5,10 +5,10 @@
     html, body { margin:0; padding:0; height:100%; }
     #map { height: 100%; width: 100%; }
 </style>
-<script src='https://maps.googleapis.com/maps/api/js?key=$googleMapsApiKey&callback=initMap' async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key='$googleMapsApiKey'&callback=initMap" async defer></script>
 <script>
 function initMap() {
-    const center = { lat: $lat, lng: $lng };
+    const center = { lat: '$lat', lng: '$lng' };
 
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 10,
