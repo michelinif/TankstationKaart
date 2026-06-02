@@ -34,9 +34,10 @@ function initMap() {
 
         const color = getColor(s.e10, cheapest);
 
-        // Dynamisch icon met kleur + prijs
+        // Dynamisch icon met kleur + prijs (GEEN backticks!)
         const iconUrl =
-            "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bb|||000000";
+            "https://chart.googleapis.com/chart?chst=d_bubble_text_small&chld=bb|" 
+            + s.e10 + "|" + color + "|000000";
 
         const marker = new google.maps.Marker({
             position: { lat: s.lat, lng: s.lng },
